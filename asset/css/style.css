@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Gill Sans", sans-serif;
 }
 
 :root {
@@ -127,7 +128,7 @@ body {
     list-style: none;
 }
 
-.text-justify {
+.text-center {
     text-align: center;
 }
 
@@ -173,8 +174,10 @@ header,
     background-color: var(--ds-bg-primary);
 }
 
+
 /*main*/
 
+/*jumbotron*/
 #jumbotron {
     background-image: url("../img/jumbo.png");
     background-size: cover;
@@ -220,10 +223,13 @@ header,
     color: var(--ds-bg-lighter);
 }
 
+/* /jumbotron*/
+
 .pgb-text_img {
     min-height: 300px;
     justify-content: space-between;
-    padding: 2rem;
+    align-items: center;
+    padding-top: 5rem;
 
     .box-img {
         flex-grow: 2;
@@ -231,8 +237,18 @@ header,
 
     .text {
         flex-grow: 1;
+        padding: 5rem;
     }
 
+    h2 {
+        font-size: 50px;
+
+    }
+
+    p {
+        margin-top: 2rem;
+        font-size: 18px;
+    }
 }
 
 #community>.pgb-text_img {
