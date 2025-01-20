@@ -136,6 +136,7 @@ header {
 
 .nmenu {
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .link-menu {
