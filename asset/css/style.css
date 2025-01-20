@@ -144,7 +144,6 @@ body {
 /* header */
 
 header {
-    min-height: 5%;
     padding: 0.5rem;
 }
 
@@ -154,9 +153,9 @@ header {
 }
 
 .link-menu {
+    align-items: center;
 
     li {
-        margin: 0.2rem;
         padding: 1rem;
 
         a {
@@ -205,7 +204,7 @@ header,
 }
 
 .jumbotton-container {
-    margin-top: 1rem;
+    padding-top: 1rem;
     justify-content: center;
     align-items: center;
     height: 40px;
@@ -234,7 +233,6 @@ header,
 }
 
 .pgb-text_img {
-    min-height: 300px;
     justify-content: space-between;
     align-items: center;
     padding-top: 5rem;
@@ -253,7 +251,7 @@ header,
     }
 
     p {
-        margin-top: 2rem;
+        padding-top: 2rem;
         font-size: 18px;
     }
 }
@@ -268,13 +266,11 @@ header,
 }
 
 #technology {
-    min-height: 500px;
     padding-top: 1.5rem;
     background-color: var(--ds-bg-light);
 }
 
 .tech_box {
-    min-height: 450px;
     width: 80%;
     margin: auto;
     flex-direction: column;
@@ -289,8 +285,8 @@ header,
         }
 
         p {
-            margin-top: 2rem;
-            margin-bottom: 2rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
 
         }
     }
@@ -299,11 +295,13 @@ header,
 
     .ftech {
         background-image: url(../img/stars.svg);
-        background-size: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
 
         flex-direction: column;
         align-items: center;
-        margin-top: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
 
         p {
             font-size: 30px;
@@ -338,7 +336,6 @@ header,
 }
 
 footer {
-    min-height: 10%;
     padding-top: 1rem;
 }
 
