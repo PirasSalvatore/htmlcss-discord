@@ -127,6 +127,10 @@ body {
     list-style: none;
 }
 
+.text-justify {
+    text-align: center;
+}
+
 /* header */
 
 header {
@@ -168,14 +172,24 @@ header,
 /*main*/
 
 #jumbotron {
-    min-height: 200px;
-    padding-top: 1.5rem;
+    background-image: url("../img/jumbo.png");
 }
 
 #jumbox {
-    min-height: 150px;
     width: 50%;
     margin: auto;
+    padding: 4rem;
+
+    color: var(--ds-bg-lighter);
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 16px;
+        padding: 2rem;
+    }
 }
 
 .pgb-text_img {
