@@ -325,7 +325,6 @@ header,
 
     padding-top: 4rem;
     padding-bottom: 3rem;
-    margin-bottom: 0.1rem;
 
 
     .external_link {
@@ -383,5 +382,9 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 0;
+
+    #register {
+        background-color: var(--ds-txt-secondary);
+    }
 
 }
