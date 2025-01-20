@@ -22,6 +22,7 @@
     --ds-bg-fsqare: #ffb6c1;
 
     --ds-bg-primary: #3161e0;
+    --ds-txt-secondary: #8ea1e1;
 }
 
 html,
@@ -223,6 +224,10 @@ header,
     color: var(--ds-bg-lighter);
 }
 
+#dw4mac {
+    background-color: var(--ds-bg-lighter);
+}
+
 #invite_only,
 #technology {
     background-color: var(--ds-bg-lighter);
@@ -258,18 +263,60 @@ header,
 
     .pgb-text_img {
         flex-direction: row-reverse;
+        padding-bottom: 5rem;
     }
 }
 
 #technology {
     min-height: 500px;
     padding-top: 1.5rem;
+    background-color: var(--ds-bg-light);
 }
 
 .tech_box {
     min-height: 450px;
     width: 80%;
     margin: auto;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+
+    section {
+        text-align: center;
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+        }
+    }
+
+
+
+    .ftech {
+        background-image: url(../img/stars.svg);
+        background-size: cover;
+
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+
+        p {
+            font-size: 30px;
+        }
+
+        #dw4mac {
+            background-color: var(--ds-txt-secondary);
+            color: var(--ds-bg-lighter);
+            height: 50px;
+            width: 250px;
+            border-radius: 30px;
+        }
+    }
 }
 
 .el-box {
