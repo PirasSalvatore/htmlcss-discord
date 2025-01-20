@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ds-bg-header: #add8e6;
+    --ds-bg-hmenu: #daa520;
+    --ds-bg-jumbo: #00008b;
+    --ds-bg-bjumbo: #ee82ee;
+    --ds-bg-lighter: #ffffff;
+    --ds-bg-light: #d3d3d3;
+    --ds-bg-img: #1e90ff;
+    --ds-bg-text: #ffc0cb;
+    --ds-bg-article: #228b22;
+    --ds-bg-footer: #23272a;
+    --ds-bg-ext-link: #f08080;
+    --ds-bg-extra-content: #20b2aa;
+    --ds-bg-fmenu: #7fffd4;
+    --ds-bg-fsqare: #ffb6c1;
+
+    --ds-bg-primary: #3161e0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.debug {
+
+    header {
+        background-color: var(--ds-bg-header);
+
+        nav {
+            background-color: var(--ds-bg-hmenu);
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+    }
+
+    main {
+
+        #jumbotron {
+            background-color: var(--ds-bg-jumbo);
+
+            #jumbox {
+                background-color: var(--ds-bg-bjumbo);
+            }
+        }
+
+        #invite_only,
+        #fandom {
+            background-color: var(--ds-bg-lighter);
+
+        }
+
+        #community,
+        #technology {
+            background-color: var(--ds-bg-light);
+
+        }
+
+        .box-img {
+            background-color: var(--ds-bg-img);
+        }
+
+        .text {
+            background-color: var(--ds-bg-text);
+        }
+
+        .tech_box {
+            background-color: var(--ds-bg-article);
+        }
+
+        #extra_link {
+
+            .external_link {
+                border-style: dotted;
+                background-color: var(--ds-bg-ext-link);
+            }
+
+            .internal_link {
+                border-style: dotted;
+                background-color: var(--ds-bg-extra-content);
+            }
+        }
+
+    }
+
+    main>#extra_link,
+    footer {
+        background-color: var(--ds-bg-footer);
+    }
+
+    footer {
+
+        .fmenu {
+            background-color: var(--ds-bg-fmenu);
+        }
+
+        img,
+        input {
+            background-color: var(--ds-bg-fsqare);
+        }
+
+    }
+}
+
+/* Utility */
+
+.flex-container {
+    display: flex;
+}
+
+.center {
+    width: 80%;
+    margin: auto;
+}
+
+.unstyle {
+    list-style: none;
+}
+
+/* header */
+
+header {
+    min-height: 5%;
+    padding: 0.5rem;
+}
+
+.nmenu {
+    justify-content: space-between;
+}
+
+.link-menu {
+
+    li {
+        margin: 0.2rem;
+        padding: 1rem;
+
+        a {
+            text-decoration: none;
+            color: var(--ds-bg-lighter);
+        }
+    }
+}
+
+input[value="Accedi"] {
+    border-style: none;
+    margin: 1rem;
+    height: 30px;
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+
+header,
+#jumbotron {
+    background-color: var(--ds-bg-primary);
+}
+
+/*main*/
+
+#jumbotron {
+    min-height: 200px;
+    padding-top: 1.5rem;
+}
+
+#jumbox {
+    min-height: 150px;
+    width: 50%;
+    margin: auto;
+}
+
+.pgb-text_img {
+    min-height: 300px;
+    justify-content: space-between;
+    padding: 2rem;
+
+    .box-img {
+        flex-grow: 2;
+    }
+
+    .text {
+        flex-grow: 1;
+    }
+
+}
+
+#community>.pgb-text_img {
+    flex-direction: row-reverse;
+}
+
+#technology {
+    min-height: 500px;
+    padding-top: 1.5rem;
+}
+
+.tech_box {
+    min-height: 450px;
+    width: 80%;
+    margin: auto;
+}
+
+.el-box {
+    min-height: 320px;
+    justify-content: space-between;
+
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0.1rem;
+
+
+    .external_link {
+        flex-grow: 2;
+    }
+
+    .internal_link {
+        flex-grow: 1;
+    }
+}
+
+footer {
+    min-height: 10%;
+    padding-top: 1rem;
+}
+
+
+.fmenu {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+
+}
