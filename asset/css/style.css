@@ -223,7 +223,10 @@ header,
     color: var(--ds-bg-lighter);
 }
 
-/* /jumbotron*/
+#invite_only,
+#technology {
+    background-color: var(--ds-bg-lighter);
+}
 
 .pgb-text_img {
     min-height: 300px;
@@ -237,12 +240,11 @@ header,
 
     .text {
         flex-grow: 1;
-        padding: 5rem;
+        padding: 3rem;
     }
 
     h2 {
-        font-size: 50px;
-
+        font-size: 40px;
     }
 
     p {
@@ -251,8 +253,12 @@ header,
     }
 }
 
-#community>.pgb-text_img {
-    flex-direction: row-reverse;
+#community {
+    background-color: var(--ds-bg-light);
+
+    .pgb-text_img {
+        flex-direction: row-reverse;
+    }
 }
 
 #technology {
